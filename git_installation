@@ -1,0 +1,67 @@
+Get installation software from git-scm.com
+
+Command to install git is 
+
+$ yum install git 
+
+$git --version
+To check the version of the git installed in the system.
+
+Then we will configure the global configuration variables to know who did the 
+modifications in the code.
+
+$ git config --global user.name "Prasanna"
+$ git config --globale user.email "margani.devops@gmail.com"
+ 
+To get the global configuration list the command is 
+
+$ git config --list
+
+To get help from git 
+
+$ git help config sysntax:[git help <verb>]
+or
+$ git config --config
+
+
+To start tracking a project we should initialize the directory to git.
+command is
+
+$ git init 
+
+To check the status of a project 
+
+$ git status
+
+If we want to ignore the file in the repository from git we can ignore them by creating .gitignore file and write the name in this file. Those files will be ignored.
+
+$ touch .gitignore
+
+In git there will be three stages they are 
+
+1) Working Directory
+2) Staging Area
+3) .git directory (Repository)
+
+If we want to add files to staging area the command is 
+
+$ git add <file_name>
+
+If we have more than one file and we want to add them all at a time we can use
+
+$ git add -A
+
+If we want to remove from staging area without commiting. We can use
+
+$ git reset
+
+To commit the files/changes those are in staging area. Command is
+
+$ git commit -m "Write what you have done here"
+
+Note:
+When we run the command $ git status 
+Then the output is On branch master nothing to commit, working directory clean. 
+Then there nothing to commit or nochanges have made to our code.
+
+
