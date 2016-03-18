@@ -64,4 +64,21 @@ When we run the command $ git status
 Then the output is On branch master nothing to commit, working directory clean. 
 Then there nothing to commit or nochanges have made to our code.
 
+$ git log
+ 
+It shows the what are all the commit made in the repository by generating a unique commit # value
 
+If we have an remote repository exiting already and we want to workon it. Then we will download the remote repository by making a clone of the existing repository. The syntax for that is 
+
+$ git clone <url> <where to clone>
+
+
+If we want to view the information about the remote repository. Following is the syntax.
+
+$ git remote -v
+ 
+$ git branch -a :To get the branches in the local machine aswell as remote branches.
+
+$ git diff : To get the changes information of the code.
+
+ 
