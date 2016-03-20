@@ -1,0 +1,35 @@
+#Code for services
+class serviceadd {
+        service {"myservice":
+        name => 'httpd',
+        ensure => stopped
+}
+}
+
+#Code for Useradd
+class useradd {
+user {"prasanna":
+    ensure => present
+}
+}
+
+#Code for package installation
+class parms {
+package {'packagename':
+        name => 'wget',
+        ensure => installed
+}
+}
+
+#Code for file creation with content
+
+class fileadd {
+file {"/home/kumar/puppetfile.txt":
+        ensure => file,
+        owner => "kumar",
+        group => "root",
+        mode => 777,
+        content => "This file is created by prasanna using puppet configuration tool."
+
+}
+}
