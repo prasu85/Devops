@@ -1,0 +1,7 @@
+#!/bin/bash
+# My first script
+
+yum install httpd #to instal apache services
+
+service httpd start #to get start the services
+
