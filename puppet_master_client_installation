@@ -1,0 +1,68 @@
+Insatllation of puppet Master and Client on Centos 6.7
+Install latest versions of Puppet Labs package repository on your correspondent
+CentOS versions
+
+# rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-e1-t.noarch.rpm
+
+On the Master Server 
+
+Set the hostname of the master server to Master(name can be any name) 
+
+vi /etc/sysconfig/network
+
+hostname = Master
+
+vim /etc/hosts
+
+add the client server ipaddress and hostname in the hosts file of the Master server
+
+# yum install puppet-server
+
+# service puppetmaster restart
+
+vi /etc/ssh/sshd_Config
+
+uncomment Permitrootlogin = yes
+
+ON CLIENT SERVER 
+
+Set the hostname of the client server to Client(name can be any name)
+
+vi /etc/sysconfig/network
+
+hostname = Client
+
+vim /etc/hosts
+
+add the Master server ipaddress and hostname in the hosts file of the client server
+
+# yum install puppet
+
+# service puppet restart 
+
+vi /etc/ssh/shhd_Config
+
+uncomment Permitrootlogin = yes
+
+vi /etc/puppet/puppet.config
+
+add the below line at the bottom of the file.
+
+Server = puppet.localdomain
+
+# service iptables stop (On both the Machines)
+
+Establish Connection between Master and Client:
+
+CERTIFICATE GENERATION
+
+ON THE CLIENT:
+
+# puppet agent -t
+
+ON THE MASTER:
+
+# puppet cert list -all
+
+# puppet cert sign clienthostname
+
