@@ -1,0 +1,24 @@
+  Steps to instal tomcat server
+
+ # wget http://www.us.apache.org/dist/tomcat/tomcat-7/v7.0.68/bin/apache-tomcat-7.0.68.tar.gz
+
+ #tar xzf apache-tomcat-7.0.68.tar.gz
+ #mv apache-tomcat-7.0.68/usr/local/tomcat7
+
+To Start the services we need to go into the location 
+
+ #cd /usr/local/tomcat7
+
+ the run the following command
+
+#./bin/startup.sh
+
+ After to deploy the project the project *.war file should be downloaded to 
+ the following location.
+
+#cd webapps/ 
+
+ To run the project open the browser and enter the url 
+
+ 127.0.0.1:8080/name of the project (where 8080 is the default port number of th e apache server)
+
