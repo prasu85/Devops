@@ -2,40 +2,40 @@ Get installation software from git-scm.com
 
 Command to install git is 
 
-$ yum install git 
+ #yum install git 
 
-$git --version
+ #git --version
 To check the version of the git installed in the system.
 
 Then we will configure the global configuration variables to know who did the 
 modifications in the code.
 
-$ git config --global user.name "Prasanna"
-$ git config --globale user.email "margani.devops@gmail.com"
+ #git config --global user.name "Prasanna"
+ #git config --globale user.email "margani.devops@gmail.com"
  
 To get the global configuration list the command is 
 
-$ git config --list
+ #git config --list
 
 To get help from git 
 
-$ git help config sysntax:[git help <verb>]
+ #git help config sysntax:[git help <verb>]
 or
-$ git config --config
+ #git config --config
 
 
 To start tracking a project we should initialize the directory to git.
 command is
 
-$ git init 
+ #git init 
 
 To check the status of a project 
 
-$ git status
+ #git status
 
 If we want to ignore the file in the repository from git we can ignore them by creating .gitignore file and write the name in this file. Those files will be ignored.
 
-$ touch .gitignore
+ #touch .gitignore
 
 In git there will be three stages they are 
 
@@ -45,77 +45,77 @@ In git there will be three stages they are
 
 If we want to add files to staging area the command is 
 
-$ git add <file_name>
+ #git add <file_name>
 
 If we have more than one file and we want to add them all at a time we can use
 
-$ git add -A
+ #git add -A
 
 If we want to remove from staging area without commiting. We can use
 
-$ git reset
+ #git reset
 
 To commit the files/changes those are in staging area. Command is
 
-$ git commit -m "Write what you have done here"
+ #git commit -m "Write what you have done here"
 
 Note:
 When we run the command $ git status 
 Then the output is On branch master nothing to commit, working directory clean. 
 Then there nothing to commit or nochanges have made to our code.
 
-$ git log
+ #git log
  
 It shows the what are all the commit made in the repository by generating a unique commit # value
 
 If we have an remote repository exiting already and we want to workon it. Then we will download the remote repository by making a clone of the existing repository. The syntax for that is 
 
-$ git clone <url> <where to clone>
+ #git clone <url> <where to clone>
 
 
 If we want to view the information about the remote repository. Following is the syntax.
 
-$ git remote -v
+ #git remote -v
  
-$ git branch -a :To get the branches in the local machine aswell as remote branches.
+ #git branch -a :To get the branches in the local machine aswell as remote branches.
 
-$ git diff : To get the changes information of the code.
+ #git diff : To get the changes information of the code.
 
 To push the change those you have made in the code in the local repository to remote repository we use
 
-$ git push origin master
+ #git push origin master
 
 To pull the existing code from remote repository to local repository
 
-$ git pull origin master
+ #git pull origin master
 
 To create a branch in the git
 
-$ git branch branchname
+ #git branch branchname
 
 To switch from one branch to another branch
 
-$ git checkout branchname
+ #git checkout branchname
 
 To get info on which branch we are working
 
-$ git branch
+ #git branch
 
 Even we can push the local branch to remote repository by the following syntax
 
-$ git push -u origin branchname
+ #git push -u origin branchname
 
 If we want to merge the branch that we have created to master branch the syntax is as follows
  
 For that we need to checkout from sub-branch to master branch
 
-$ git checkout master
+ #git checkout master
 
 Now we can merge
 
-$ git branch --merge
+ #git branch --merge
 
-$ git merge branchname
+ #git merge branchname
 
 Now to sub-branch is merged to master branch
 
@@ -123,16 +123,16 @@ Now we can delete the sub-branch
 
 To delete the branch
 
-$ git branch --merged 
+ #git branch --merged 
 
-$ git branch -d branchname
+ #git branch -d branchname
 
 The above command removes the local sub-branch
 
-$ git branch -a 
+ #git branch -a 
 
 To remove remote sub-branch 
 
-$ git push origin --delete branchname
+ #git push origin --delete branchname
 
   
