@@ -48,7 +48,7 @@ vi /etc/puppet/puppet.config
 
 add the below line at the bottom of the file.
 
-Server = puppet.localdomain
+Server = puppet.localdomain( Puppet Master Server name)
 
 # service iptables stop (On both the Machines)
 
