@@ -2,7 +2,7 @@ Insatllation of puppet Master and Client on Centos 6.7
 Install latest versions of Puppet Labs package repository on your correspondent
 CentOS versions
 
-# rpm -ivh http://yum.puppetlabs.com/puppetlabs-release-e1-t.noarch.rpm
+# rpm -ivh https://yum.puppetlabs.com/puppetlabs-release-e1-t.noarch.rpm (On all the servers which are part in puppet)
 
 On the Master Server 
 
